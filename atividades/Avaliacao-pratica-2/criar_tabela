@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS Matricula (
     nota_N2 FLOAT,
     faltas INT,
     Aprovado_SN BOOLEAN,
-    FOREIGN KEY (Carla Dias) REFERENCES TB_ALUNOS(id),
-    FOREIGN KEY (Ricardo) REFERENCES TB_PROFESSOR(id),
-    FOREIGN KEY (Geografia) REFERENCES TB_DISCIPLINA(id)
+    FOREIGN KEY (nome_aluno) REFERENCES TB_ALUNOS(id),
+    FOREIGN KEY (nome_professor) REFERENCES TB_PROFESSOR(id),
+    FOREIGN KEY (disciplina) REFERENCES TB_DISCIPLINA(id)
 );
